@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Tech Sphere</title>
+</head>
+
+<body>
+  <div id="app">
+    <!-- Hero Section -->
+    <header class=" relative min-h-screen flex items-center justify-center bg-cover bg-[url('/images/backdrop.webp')]">
+      <nav class="fixed w-full top-0 z-50 px-4 lg:px-10 py-3 pt-6 ">
+        <div class="mx-auto flex items-center justify-between">
+          <!-- Logo -->
+          <div class="flex items-center space-x-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-cyan-400" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M2 12h20M12 2v20"></path>
+            </svg>
+            <span class="font-bold text-xl text-white">Tech Sphere</span>
+          </div>
+
+          <!-- Navigation Links (Desktop) -->
+          <div
+            class="hidden md:block bg-gray-800/30 backdrop-blur-lg border border-white/20 p-4 px-10 rounded-full shadow-[0_0_20px_0_hsla(0,0%,100%,.1)]">
+            <div class="flex space-x-4 gap-x-4 lg:gap-x-8 text-white">
+              <a href="#" class="hover:drop-shadow-[0_0_4px_rgba(255,255,255,0.4)]">Home</a>
+              <a href="#" class="hover:drop-shadow-[0_0_4px_rgba(255,255,255,0.4)]">About</a>
+              <a href="#" class="hover:drop-shadow-[0_0_4px_rgba(255,255,255,0.4)]">Features</a>
+              <a href="#" class="hover:drop-shadow-[0_0_4px_rgba(255,255,255,0.4)]">Blog</a>
+              <a href="#" class="hover:drop-shadow-[0_0_4px_rgba(255,255,255,0.4)]">Contact</a>
+            </div>
+          </div>
+          <!-- Hamburger Menu (Mobile) -->
+          <button id="menu-toggle" class="md:hidden focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+
+          <!-- CTA Button -->
+          <a href="#">
+            <button
+              class="group/button relative inline-flex items-center justify-center overflow-hidden rounded-full bg-gray-800/30 backdrop-blur-lg px-6 py-2 text-base font-semibold text-white transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:shadow-gray-600/50 border border-white/20">
+              <span class="text-lg text-nowrap">Join now</span>
+              <div
+                class="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:[transform:skew(-13deg)_translateX(100%)]">
+                <div class="relative h-full w-10 bg-white/20"></div>
+              </div>
+            </button>
+
+          </a>
+
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu"
+          class="md:hidden mt-4 hidden bg-gray-800/30 backdrop-blur-lg border border-white/20 text-center">
+          <a href="#" class="block py-2 transition hover:bg-[rgba(0,0,0,0.1)]">Home</a>
+          <a href="#" class="block py-2 transition hover:bg-[rgba(0,0,0,0.1)]">About</a>
+          <a href="#" class="block py-2 transition hover:bg-[rgba(0,0,0,0.1)]">Features</a>
+          <a href="#" class="block py-2 transition hover:bg-[rgba(0,0,0,0.1)]">Blog</a>
+          <a href="#" class="block py-2 transition hover:bg-[rgba(0,0,0,0.1)]">Contact</a>
+        </div>
+      </nav>
+      <div class="text-center">
+        <h1 class="text-6xl font-bold mb-4">Explore the Future of Technology</h1>
+        <p class="text-xl">Web 3.0, Gen AI, Blockchain, and More</p>
+        <div class="relative group mt-6">
+          <button
+            class="relative inline-block p-px font-semibold leading-6 text-white bg-gray-800 shadow-2xl cursor-pointer rounded-xl shadow-zinc-900 transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95">
+            <span
+              class="absolute inset-0 rounded-xl bg-gradient-to-r from-teal-400 via-blue-500 to-purple-500 p-[2px] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
+
+            <span class="relative z-10 block px-6 py-3 rounded-xl bg-gray-950">
+              <div class="relative z-10 flex items-center space-x-2">
+                <span class="transition-all duration-500 group-hover:translate-x-1">Let's get started</span>
+                <svg class="w-6 h-6 transition-transform duration-500 group-hover:translate-x-1" data-slot="icon"
+                  aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path clip-rule="evenodd"
+                    d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
+                    fill-rule="evenodd"></path>
+                </svg>
+              </div>
+            </span>
+          </button>
+        </div>
+      </div>
+      <!-- <div class="absolute z-[100] w-full h-full">
+        <div id="particles-js"></div>
+        <div class="count-particles"> <span class="js-count-particles"></span> </div>
+      </div> -->
+      <div class="absolute bottom-8 left-8">
+        <div class="radar-ui">
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+
+    <!--Stats-->
+    <section>
+      <div class="py-24 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
+            <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+              <dt class="text-base leading-7 text-[#808080]">Transactions every 24 hours</dt>
+              <dd class="order-first text-3xl font-semibold tracking-tight text-white sm:text-5xl">44 million</dd>
+            </div>
+            <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+              <dt class="text-base leading-7 text-[#808080]">Assets under holding</dt>
+              <dd class="order-first text-3xl font-semibold tracking-tight text-white sm:text-5xl">$119 trillion</dd>
+            </div>
+            <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+              <dt class="text-base leading-7 text-[#808080]">New users annually</dt>
+              <dd class="order-first text-3xl font-semibold tracking-tight text-white sm:text-5xl">46,000</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+    <!-- Features -->
+    <section>
+      <div>
+        <div class="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
+          <div
+            class="relative isolate overflow-hidden bg-gray-900 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+            <svg viewBox="0 0 1024 1024"
+              class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
+              aria-hidden="true">
+              <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fill-opacity="0.7" />
+              <defs>
+                <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
+                  <stop stop-color="#7775D6" />
+                  <stop offset="1" stop-color="#E935C1" />
+                </radialGradient>
+              </defs>
+            </svg>
+            <div class="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+              <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Boost your productivity.<br>Start
+                using our app today.</h2>
+              <p class="mt-6 text-lg leading-8 text-gray-300">Ac euismod vel sit maecenas id pellentesque eu sed
+                consectetur. Malesuada adipiscing sagittis vel nulla.</p>
+              <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
+                <a href="#"
+                  class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-200 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Get
+                  started</a>
+                <a href="#" class="text-sm font-semibold leading-6 text-white">Learn more <span
+                    aria-hidden="true">→</span></a>
+              </div>
+            </div>
+            <div class="relative mt-16 h-80 lg:mt-8">
+              <img class="absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
+                src="https://tailwindui.com/plus/img/component-images/dark-project-app-screenshot.png"
+                alt="App screenshot" width="1824" height="1080">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!--Bento grid cards -->
+
+    <section>
+      <canvas id="starMouseCanvas" class="block w-full h-screen cursor-none"></canvas>
+    </section>
+
+    <canvas id="canvas3d"></canvas>
+
+    <!-- Technology Highlights Section -->
+    <section id="technologies" class="py-16">
+      <h2 class="text-4xl font-bold text-center mb-12">Technologies to Explore</h2>
+      <div class="flex justify-center gap-8 px-4">
+        <!-- <div class="bg-gray-800 p-8 rounded-lg hover:shadow-xl transition duration-300 ease-in-out" data-tilt>
+          <div>
+            <h3 class="text-2xl mb-4">Web 3.0</h3>
+            <canvas id="web3Canvas" class="h-64 w-full"></canvas>
+            <p class="mt-4">Decentralized internet and blockchain technologies.</p>
+          </div>
+        </div> -->
+        <div class="bg-gray-800 p-8 rounded-lg card" data-tilt data-tilt-glare="true" data-tilt-maxGlare=".5"
+          data-tilt-speed="400" data-tilt-scale="1.02" data-tilt-maxtilt="10">
+
+          <h3 class="text-2xl mb-4">Gen AI</h3>
+          <canvas id="genAICanvas" class="h-64 w-full"></canvas>
+          <p class="mt-4">AI that evolves, learns, and adapts autonomously.</p>
+
+        </div>
+        <!-- <div class="bg-gray-800 p-8 rounded-lg hover:shadow-xl transition duration-300 ease-in-out" data-tilt>
+          <div>
+            <h3 class="text-2xl mb-4">Blockchain</h3>
+            <canvas id="blockchainCanvas" class="h-64 w-full"></canvas>
+            <p class="mt-4">A decentralized ledger securing the future of transactions.</p>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-16 bg-gray-800 text-center">
+      <h2 class="text-4xl font-bold mb-6">Ready to Dive into the Future?</h2>
+      <p class="text-lg mb-8">Get hands-on with the latest technologies shaping the world.</p>
+      <button class="px-8 py-4 bg-green-600 hover:bg-green-500 text-white rounded-full">Learn More</button>
+    </section>
+
+    <section>
+      <!-- Chat Button -->
+      <div class="fixed bottom-8 right-8 cursor-pointer z-50">
+        <button id="chatBtn"
+          class="group relative outline-0 bg-gray-800/30 backdrop-blur-lg [--sz-btn:68px] [--space:calc(var(--sz-btn)/5.5)] [--gen-sz:calc(var(--space)*2)] [--sz-text:calc(var(--sz-btn)-var(--gen-sz))] h-[var(--sz-btn)] w-[var(--sz-btn)] border border-white/20 rounded-xl flex items-center justify-center aspect-square cursor-pointer transition-transform duration-200 active:scale-[0.95]  [box-shadow:#3c40434d_0_1px_2px_0,#3c404326_0_2px_6px_2px,#0000004d_0_30px_60px_-30px,#34343459_0_-2px_6px_0_inset]">
+          <svg
+            class="animate-pulse absolute z-10 overflow-visible transition-all duration-300 text-white group-hover:text-white top-[calc(var(--sz-text)/7)] left-[calc(var(--sz-text)/7)] h-[var(--gen-sz)] w-[var(--gen-sz)] group-hover:h-[var(--sz-text)] group-hover:w-[var(--sz-text)] group-hover:left-[calc(var(--sz-text)/4)] group-hover:top-[calc(calc(var(--gen-sz))/2)]"
+            stroke="none" viewBox="0 0 24 24" fill="white">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5zM18 1.5a.75.75 0 01.728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 010 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 01-1.456 0l-.258-1.036a2.625 2.625 0 00-1.91-1.91l-1.036-.258a.75.75 0 010-1.456l1.036-.258a2.625 2.625 0 001.91-1.91l.258-1.036A.75.75 0 0118 1.5zM16.5 15a.75.75 0 01.712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 010 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 01-1.422 0l-.395-1.183a1.5 1.5 0 00-.948-.948l-1.183-.395a.75.75 0 010-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0116.5 15z">
+            </path>
+          </svg>
+          <span
+            class="[font-size:var(--sz-text)] font-extrabold leading-none text-white transition-all duration-200 group-hover:opacity-0">AI</span>
+        </button>
+      </div>
+
+      <!-- Chat Window -->
+      <div id="chatWindow"
+        class="hidden fixed bottom-16 right-16 bg-gray-800/30 backdrop-blur-lg border border-white/20 p-4 w-72 h-96 rounded-lg shadow-lg flex flex-col">
+        <div class="text-white text-lg mb-4 italic">Sphere AI</div>
+        <div id="chatContent" class="flex-grow overflow-y-auto p-2 rounded-lg"></div>
+        <input id="chatInput" type="text" placeholder="Ask sphere AI..."
+          class="mt-4 p-2 w-full rounded-md bg-gray-800/40 text-white" />
+      </div>
+
+    </section>
+
+    <footer>
+      <div class="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
+            <div class="max-w-xl lg:max-w-lg">
+              <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Subscribe to our newsletter.</h2>
+              <p class="mt-4 text-lg leading-8 text-gray-300">Stay updated with the latest trends in technology by
+                subscribing to our weekly newsletter. No spam, just quality insights to help you
+                stay ahead!</p>
+              <div class="mt-6 flex max-w-md gap-x-4">
+                <label for="email-address" class="sr-only">Email address</label>
+                <input id="email-address" name="email" type="email" autocomplete="email" required
+                  class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
+                  placeholder="Enter your email">
+                <button type="submit"
+                  class="flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Subscribe</button>
+              </div>
+            </div>
+            <dl class="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
+              <div class="flex flex-col items-start">
+                <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+                  <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" aria-hidden="true" data-slot="icon">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+                  </svg>
+                </div>
+                <dt class="mt-4 font-semibold text-white">Weekly articles</dt>
+                <dd class="mt-2 leading-7 text-gray-400">Non laboris consequat cupidatat laborum magna. Eiusmod non
+                  irure cupidatat duis commodo amet.</dd>
+              </div>
+              <div class="flex flex-col items-start">
+                <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+                  <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" aria-hidden="true" data-slot="icon">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M10.05 4.575a1.575 1.575 0 1 0-3.15 0v3m3.15-3v-1.5a1.575 1.575 0 0 1 3.15 0v1.5m-3.15 0 .075 5.925m3.075.75V4.575m0 0a1.575 1.575 0 0 1 3.15 0V15M6.9 7.575a1.575 1.575 0 1 0-3.15 0v8.175a6.75 6.75 0 0 0 6.75 6.75h2.018a5.25 5.25 0 0 0 3.712-1.538l1.732-1.732a5.25 5.25 0 0 0 1.538-3.712l.003-2.024a.668.668 0 0 1 .198-.471 1.575 1.575 0 1 0-2.228-2.228 3.818 3.818 0 0 0-1.12 2.687M6.9 7.575V12m6.27 4.318A4.49 4.49 0 0 1 16.35 15m.002 0h-.002" />
+                  </svg>
+                </div>
+                <dt class="mt-4 font-semibold text-white">No spam</dt>
+                <dd class="mt-2 leading-7 text-gray-400">Officia excepteur ullamco ut sint duis proident non
+                  adipisicing. Voluptate incididunt anim.</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+        <div class="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6" aria-hidden="true">
+          <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
+            style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <script type="module" src="main.js"></script>
+  <script type="module" src="./src/vanilla-tilt.js"></script>
+  <!-- <script type="module" src="./src/particles.js"></script> -->
+  <!-- <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="http://threejs.org/examples/js/libs/stats.min.js"></script> -->
+</body>
+
+</html>

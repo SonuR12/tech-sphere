@@ -1,0 +1,27 @@
+{
+  "name": "tech-sphere",
+  "private": true,
+  "version": "1.0.0",
+  "description": "TechSphere | Discover the Future of Technology. This is your portal to cutting-edge technologies like Web 3.0, Gen AI, and blockchain. Dive into 3D experiences, get real-time insights with Gemini AI, and stay ahead in the fast-evolving world of innovation.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13",
+    "vite": "^5.4.8"
+  },
+  "author": "Jatin Kaushik",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "@splinetool/runtime": "^1.9.30",
+    "particles.js": "^2.0.0",
+    "three": "^0.169.0",
+    "tilt.js": "^1.2.1",
+    "vanilla-tilt": "^1.8.1"
+  }
+}
