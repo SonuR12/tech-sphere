@@ -6,14 +6,16 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./src/locomotive-scroll.css">
   <title>Tech Sphere</title>
 </head>
 
 <body>
-  <div id="app">
+  <div id="app" data-scroll-container>
     <!-- Hero Section -->
-    <header class=" relative min-h-screen flex items-center justify-center bg-cover bg-[url('/images/backdrop.webp')]">
-      <nav class="fixed w-full top-0 z-50 px-4 lg:px-10 py-3 pt-6 ">
+    <header class=" relative min-h-screen flex items-center justify-center bg-cover bg-[url('/images/backdrop.webp')]"
+      data-scroll-section>
+      <nav class="fixed w-full top-0 z-50 px-4 lg:px-10 py-3 pt-6 " data-scroll>
         <div class="mx-auto flex items-center justify-between">
           <!-- Logo -->
           <div class="flex items-center space-x-2">
@@ -56,7 +58,6 @@
                 <div class="relative h-full w-10 bg-white/20"></div>
               </div>
             </button>
-
           </a>
 
         </div>
@@ -71,10 +72,10 @@
           <a href="#" class="block py-2 transition hover:bg-[rgba(0,0,0,0.1)]">Contact</a>
         </div>
       </nav>
-      <div class="text-center">
-        <h1 class="text-6xl font-bold mb-4">Explore the Future of Technology</h1>
-        <p class="text-xl">Web 3.0, Gen AI, Blockchain, and More</p>
-        <div class="relative group mt-6">
+      <div class="text-center" data-scroll data-scroll-speed="1">
+        <h1 class="text-6xl font-bold mb-4" data-scroll data-scroll-speed="2">Explore the Future of Technology</h1>
+        <p class="text-xl" data-scroll data-scroll-speed="1">Web 3.0, Gen AI, Blockchain, and More</p>
+        <div class="relative group mt-6" data-scroll data-scroll-speed="2">
           <button
             class="relative inline-block p-px font-semibold leading-6 text-white bg-gray-800 shadow-2xl cursor-pointer rounded-xl shadow-zinc-900 transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95">
             <span
@@ -98,16 +99,30 @@
         <div id="particles-js"></div>
         <div class="count-particles"> <span class="js-count-particles"></span> </div>
       </div> -->
-      <div class="absolute bottom-8 left-8">
-        <div class="radar-ui">
-          <span></span>
+
+    </header>
+
+    <section data-scroll-section>
+      <div id="tech01" data-scroll>
+        <div class="flex flex-col md:flex-row justify-center items-center gap-x-20">
+          <div class="w-96 aspect-square rounded-lg bg-red-500" data-scroll data-scroll-speed="1"
+            data-scroll-direction="horizontal"></div>
+          <div class="w-1/2" data-scroll data-scroll-speed="1">
+            <h2 class="text-5xl font-semibold my-4 mb-10">Generative AI</h2>
+            <p>Lorem Ipsum donor emet teller Lorem Ipsum donor emet teller Lorem Ipsum donor emet teller Lorem Ipsum
+              donor emet teller Lorem Ipsum donor emet teller Lorem Ipsum donor emet teller Lorem Ipsum donor emet
+              teller Lorem Ipsum donor emet teller Lorem Ipsum
+              donor emet teller Lorem Ipsum donor emet teller Lorem Ipsum donor emet teller Lorem Ipsum donor emet
+              teller Lorem Ipsum donor emet teller Lorem Ipsum
+              donor emet teller Lorem Ipsum donor emet teller</p>
+          </div>
         </div>
       </div>
-    </header>
+    </section>
 
 
     <!--Stats-->
-    <section>
+    <section data-scroll-section>
       <div class="py-24 sm:py-32">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
           <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
@@ -128,7 +143,7 @@
       </div>
     </section>
     <!-- Features -->
-    <section>
+    <section data-scroll-section>
       <div>
         <div class="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
           <div
@@ -169,14 +184,11 @@
     </section>
     <!--Bento grid cards -->
 
-    <section>
-      <canvas id="starMouseCanvas" class="block w-full h-screen cursor-none"></canvas>
-    </section>
 
     <canvas id="canvas3d"></canvas>
 
     <!-- Technology Highlights Section -->
-    <section id="technologies" class="py-16">
+    <section id="technologies" class="py-16" data-scroll-section>
       <h2 class="text-4xl font-bold text-center mb-12">Technologies to Explore</h2>
       <div class="flex justify-center gap-8 px-4">
         <!-- <div class="bg-gray-800 p-8 rounded-lg hover:shadow-xl transition duration-300 ease-in-out" data-tilt>
@@ -205,12 +217,22 @@
     </section>
 
     <!-- Call to Action Section -->
-    <section class="py-16 bg-gray-800 text-center">
+    <section class="py-16 bg-gray-800 text-center" data-scroll-section>
       <h2 class="text-4xl font-bold mb-6">Ready to Dive into the Future?</h2>
       <p class="text-lg mb-8">Get hands-on with the latest technologies shaping the world.</p>
-      <button class="px-8 py-4 bg-green-600 hover:bg-green-500 text-white rounded-full">Learn More</button>
+      <a href="https://github.com/jatinkaushik-jk/tech-sphere" target="_blank" rel="noopener noreferrer">
+        <button
+          class="group/button relative inline-flex items-center justify-center overflow-hidden rounded-full bg-gray-800/30 backdrop-blur-lg px-6 py-2 text-base font-semibold text-white transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:shadow-gray-600/50 border border-white/20">
+          <span class="text-lg text-nowrap">Learn more</span>
+          <div
+            class="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:[transform:skew(-13deg)_translateX(100%)]">
+            <div class="relative h-full w-10 bg-white/20"></div>
+          </div>
+        </button>
+      </a>
     </section>
 
+    <!-- Sphere AI Chatbot -->
     <section>
       <!-- Chat Button -->
       <div class="fixed bottom-8 right-8 cursor-pointer z-50">
@@ -239,7 +261,7 @@
 
     </section>
 
-    <footer>
+    <footer data-scroll-section>
       <div class="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
           <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
@@ -296,6 +318,7 @@
   </div>
   <script type="module" src="main.js"></script>
   <script type="module" src="./src/vanilla-tilt.js"></script>
+  <!-- <script type="module" src="./src/locomotive-scroll.min.js"></script> -->
   <!-- <script type="module" src="./src/particles.js"></script> -->
   <!-- <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="http://threejs.org/examples/js/libs/stats.min.js"></script> -->
